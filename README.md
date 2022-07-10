@@ -1,5 +1,5 @@
 # portfolio
-Live Link:https://portfoliodiksha.netlify.app/
+Live Link:https://dikshatomar.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/91546745/178148611-13cc7938-8068-4eff-ad04-ac527703548e.png)
 
