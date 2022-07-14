@@ -20,6 +20,7 @@ body{
 }
 
 #navbar{
+
     padding-right: 20px;
     font-family:'Archivo',sans-serif ;
 }
@@ -506,27 +507,22 @@ body{
 }
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (min-device-width: 321px) and (max-width: 767px){
   #projects{
+    overflow: hidden;
     text-align: center;
     background-color: #094b65;
-    background-image: linear-gradient(315deg, #094b65 0%, #8fa6ca93 74%);
     height: 160vh;
     color: #fff;
 }
 
-#projects-card{
-    /* background-color: #094b65; */
-    /* background-image: linear-gradient(315deg, #094b65 0%, #8fa6ca93 74%); */
-}
 #projects .card{
+  background-color: #094b65;
     width: 400px;
     height:300px;
-    border-color: #FFF;
-    background-color: #63a4ff;
-background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+ 
     color: #fff;
-}
+  }
 
 #codingninjas{
   text-align: left;}
@@ -548,6 +544,9 @@ background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
   
 }
 
+.card-title{
+  font-weight: 600;
+}
 .main-section-projects {
     text-align: center;
     display: flex;
@@ -568,9 +567,8 @@ background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
 #projects .card{
     width: 400px;
     height:400px;
-    border-color: #FFF;
     color: #000000;
-    background-color: #fff;
+   
 }
 
 
@@ -786,28 +784,30 @@ body {
 
   /* media queries for project */
 
-  @media only screen and (min-device-width: 481px) and (max-width: 768px) {
-
-      #projects{
-        height:fit-content;
-    overflow: hidden;
-
+  @media only screen and (max-width: 781px) {
+      .description{
+        padding: 0px 20px 0px 20px;
       }
 
+      #projects{
+        height:360vh;
+        overflow: hidden;
+      }
       .card-body{
         padding: 1rem;
         background-color: #ffffff;
       }
-
       #projects-card{
         margin-bottom: 30px;
-
       }
       #projects-card1{
         margin-bottom: 30px;
       }
       #projects-card2{
         margin-bottom: 30px;
+      }
+      #projects-card2 .card-body{
+       height: 40px;
       }
       #projects-card3{
         margin-bottom: 30px;
@@ -822,18 +822,52 @@ body {
         margin-bottom: 30px;
       }
       .main-section-projects{
-        display: block;
-        margin-left: 32px;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
       }
       .main-section-projects1{
-        display: block;
-        margin-left: 3px;
-        margin-bottom: 40px;
-        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
+      #contact{
+        text-align: center;
+        max-width: 100%;
+        animation: bounceIn 3s ease-in-out s 1 ;   
+      }
+
+      .contact-form h5{
+        color: white;
+      }
+
+      .contact-form{
+        background-color: #2d3436;
+        background-image: linear-gradient(315deg, #59a0b4 #094b65 0%,  74%);
+      }
+
+      footer .firstdiv{
+        text-align: center;
+        padding-right:40px ;
+      }
+      .contact-form-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      };
+      
+      .container-flex{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
       }
   }
-
 
 
   /* animations */
