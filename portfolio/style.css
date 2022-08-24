@@ -197,7 +197,6 @@ padding:12px;
 }
 .card-body2{
    background-color: #094b65 ;
-   ;
    font-family: 'Roboto';
    font-weight: 400;
    padding: 30px;
@@ -575,7 +574,7 @@ body{
 /* contact */
 #contact{
     background-color: #FFF;
-    height:fit-content;;
+    height:fit-content;
     overflow: hidden;
 }
 
@@ -859,7 +858,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-      };
+      }
       
       .container-flex{
         width: 100%;
